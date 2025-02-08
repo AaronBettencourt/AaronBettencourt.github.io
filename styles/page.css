@@ -1,0 +1,163 @@
+body {
+    background-color: var(--color-background);
+}
+
+h1 {
+    color: var(--color-secondary);
+    font-size: var(--font-size-large);
+}
+
+p, h2, li, span {
+    color: var(--color-text);
+}
+
+body > *{
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+
+header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--color-primary);
+}
+
+.split {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pad-vertical-small {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.pad-vertical-medium {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+ul {
+    margin-left: 2rem;
+}
+
+section {
+    margin-top: 2rem;
+}
+
+img {
+    border-radius: var(--border-radius-large);
+}
+
+h2 {
+    font-size: var(--font-size-medium);
+}
+
+hr {
+    border: .1rem solid var(--color-highlight);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: var(--border-radius-large);
+}
+
+
+.flow-pane {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.theme-item {
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+}
+
+.theme-item:hover {
+    background-color: var(--color-highlight);
+}
+
+
+.theme-swatch-wrapper {
+    border: 1px solid var(--color-primary);
+    display: flex;
+    margin-right: .5rem;
+}
+
+.theme-swatch{
+    width: 12px;
+    height: 12px;
+}
+    
+
+.flow-item {
+    border: var(--border-radius-small) solid var(--color-primary);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--color-secondary);
+}
+
+.dropdown-button {
+    border: none;
+    padding: 5px;
+    border-radius: var(--border-radius-medium);
+}
+
+.dropdown-button, .dropdown-items, p {
+    font-size: var(--font-size-small);
+}
+
+.dropdown-button:hover {
+    cursor: pointer;
+}
+
+.dropdown-items {
+    background-color: var(--color-background);
+    position: absolute;
+    width:fit-content;
+    opacity: 0;
+    cursor: default;
+}
+
+.active > .dropdown-items{
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px 0px var(--color-primary);
+}
+
+@media screen and (width <= 1400px) and (orientation: portrait){
+    body > *{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    #profile-picture {
+        height: auto;
+        width: 50%;
+    }
+
+    .dropdown-button, .dropdown-items {
+        font-size: var(--font-size-mobile-small);
+    }
+
+    .flow-item {
+        width: 15rem;
+        height: 15rem;
+    }
+
+}

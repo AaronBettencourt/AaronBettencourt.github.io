@@ -1,0 +1,43 @@
+:root {
+    --color-primary: black;
+    --color-background: rgb(245, 245, 245);
+    --color-secondary: #E5E5E5;
+    --color-highlight: #d6d6e6;
+    --color-text: black;
+
+    --font-size-large: 2rem;
+    --font-size-medium: 1.5rem;
+    --font-size-small: 1rem;
+
+    --font-size-large: 2rem;
+    --font-size-medium: 1.5rem;
+    --font-size-mobile-small: 2rem;
+
+    --border-radius-large: 1rem;
+    --border-radius-medium: .5rem; 
+    --border-radius-small: .2rem;
+}
+
+.theme-default {
+    --color-primary: black;
+    --color-background: rgb(245, 245, 245);
+    --color-secondary: #E5E5E5;
+    --color-highlight: #d6d6e6;
+    --color-text: black;
+}
+
+.theme-cal-poly {
+    --color-primary:  #154734;
+    --color-background: rgb(250, 250, 255);
+    --color-secondary: white;
+    --color-highlight: #BD8B13;
+    --color-text: black;
+}
+
+.theme-dark-mode {
+    --color-primary:  black;
+    --color-background: rgb(31, 31, 31);
+    --color-secondary: rgb(163, 163, 163);
+    --color-highlight: #636363;
+    --color-text: rgb(194, 194, 194);
+}
